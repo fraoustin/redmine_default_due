@@ -4,7 +4,13 @@
 ## Plugin installation
 
 1. Copy the plugin directory into the vendor/plugins directory
-2. Restart Redmine
+2. install plugin
+
+```
+   bundle exec rake deface:precompile RAILS_ENV=production
+   bundle exec rake deface:clean RAILS_ENV=production
+```
+3. Restart Redmine
 
 with a Dockerfile
 
